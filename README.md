@@ -9,3 +9,4 @@
 ### hashCode()、ハッシュ値を得る、Object
 ### comepareTo()、大小関係を判定する、Coneparable
 ### clone()、複製する　、Object　・　Cloneable
+### ※toString()、equals()、hashCode()の3つは特に重要なメソッド
