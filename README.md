@@ -10,3 +10,6 @@
 ### ◯compareTo()、大小関係を判定する、Comparable
 ### ◯clone()、複製する、Object・Cloneable
 ### ※toString()、equals()、hashCode()の3つは特に重要なメソッド
+
+### toString()のオーバーライド
+#### 新たなクラスを開発したら、toString()をオーバーライドしておくことで開発者が意図した文字列表現を渡すことができる。行わなければ意図したものとは結果が表示される。
