@@ -16,6 +16,7 @@
 メソッド内でインスタンスフィールドにアクセスするためには「this」という特殊な変数を用いる。  
 thisはクラス内のメソッドの定義の中でのみ使用可能。  
 メソッドが呼ばれた時に、そのメソッドを呼び出しているインスタンスに置き換えれる。  
+例
 ```
 class Person {
   public String name;
@@ -25,6 +26,45 @@ class Person {
   }
 }
 ```
+  
+### コンストラクタ
+クラスには、コンストラクタというものがある。  
+コンストラクタとは、newを使ってインスタンスを生成した後に自動で呼び出される特別なメソッド。  
+コンストラクタは特別なメソッドのため、定義方法が決まっている。  
+①コンストラクタ名はクラス名と同じにする  
+②戻り値を書いてはいけない（voidも書かない）  
+この2つの決まりさえ守れば、コンストラクタの完成。  
+例  
+Main.java  
+```
+class Main {
+  public static void main(String[] args) {
+    Person person1 = new Person("Kate Jones");
+    person1.hello();
+
+    Person person2 = new Person("John Christopher Smith");
+    person2.hello();
+  }
+}
+```
+  
+Person.java
+```
+class Person {
+  public String name;
+
+  Person(String name) {
+    System.out.println("インスタンスが生成されました");
+    this.name = name;
+    
+  }
+
+  public void hello() {
+    System.out.println("こんにちは、私は" + this.name + "です");
+  }
+}
+```
+  
   
 ### java　インスタンスの5大基本操作
 #### Objectクラスに備わる基本機能  
