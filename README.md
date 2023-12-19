@@ -65,6 +65,40 @@ class Person {
 }
 ```
   
+・より多くの情報を表示させる例  
+Main.java  
+```
+class Main {
+  public static void main(String[] args) {
+    Person person1 = new Person("Kate", "Jones", 27, 1.6, 50.0);
+    
+    System.out.println(person1.firstName);
+    System.out.println(person1.lastName);
+    System.out.println(person1.age);
+    System.out.println(person1.height);
+    System.out.println(person1.weight);
+  }
+}
+```
+  
+Person.java  
+```
+class Person {
+ public String firstName;
+ public String lastName;
+ public int age;
+ public double height;
+ public double weight;
+
+  Person(String firstName, String lastName, int age, double height, double weight) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.height = height;
+    this.weight = weight;
+  }
+```
+  
   
 ### java　インスタンスの5大基本操作
 #### Objectクラスに備わる基本機能  
